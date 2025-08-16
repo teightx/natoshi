@@ -1,0 +1,14 @@
+# Logo Placeholder
+
+This is a placeholder for the logo.png file.
+
+## Instructions:
+1. Replace this file with your actual logo image
+2. Recommended size: 64x64 pixels
+3. Format: PNG with transparency
+4. File should be named: logo.png
+
+## Example:
+- Your logo file should be placed at: `/assets/logo.png`
+- The logo will appear in the top-left corner of the page
+- It will be displayed at 48px width on desktop, 40px on mobile

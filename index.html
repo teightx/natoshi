@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="somewhere between git, bpm and iso. i make music. sometimes. shoot photos. also sometimes. kinda.">
+    <meta name="theme-color" content="#0a0a0a">
+    <meta name="color-scheme" content="dark">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="natoshi.exe">
+    <meta property="og:description" content="somewhere between git, bpm and iso. i make music. sometimes. shoot photos. also sometimes. kinda.">
+    <meta property="og:image" content="/assets/og-image.png">
+    <meta property="og:url" content="https://natoshi.exe">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="natoshi.exe">
+    <meta name="twitter:description" content="somewhere between git, bpm and iso. i make music. sometimes. shoot photos. also sometimes. kinda.">
+    <meta name="twitter:image" content="/assets/og-image.png">
+    
+    <!-- Canonical -->
+    <link rel="canonical" href="https://natoshi.exe">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎧</text></svg>">
+    
+    <title>natoshi.exe</title>
+    
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+    <div class="noise-overlay"></div>
+    <div class="radial-glow" id="radialGlow"></div>
+    
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="/assets/logo.png" alt="natoshi.exe logo" width="64" height="64">
+            </div>
+            
+            <div class="theme-controls">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                
+                <div class="accent-selector">
+                    <button class="accent-btn accent-cyan active" data-accent="cyan" aria-label="Cyan accent"></button>
+                    <button class="accent-btn accent-magenta" data-accent="magenta" aria-label="Magenta accent"></button>
+                    <button class="accent-btn accent-lima" data-accent="lima" aria-label="Lima accent"></button>
+                    <button class="accent-btn accent-amber" data-accent="amber" aria-label="Amber accent"></button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="profile">
+                <h1 class="title" id="title">natoshi.exe</h1>
+                
+                <div class="bio">
+                    <p>somewhere between git, bpm and iso.</p>
+                    <p>i make music. sometimes. shoot photos. also sometimes. kinda.</p>
+                </div>
+                
+                <button class="copy-handle" id="copyHandle" aria-label="Copy @natoshi.exe">
+                    <span class="copy-text">copy @natoshi.exe</span>
+                    <span class="copy-success">copied!</span>
+                </button>
+            </div>
+
+            <nav class="links">
+                <a href="https://www.instagram.com/natoshi.exe" target="_blank" rel="noopener noreferrer" class="link-card">
+                    <svg class="link-icon" role="img" aria-label="Instagram" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                    <span class="link-text">instagram</span>
+                </a>
+                
+                <a href="https://www.tiktok.com/@natoshi.raw" target="_blank" rel="noopener noreferrer" class="link-card">
+                    <svg class="link-icon" role="img" aria-label="TikTok" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path>
+                    </svg>
+                    <span class="link-text">tiktok</span>
+                </a>
+                
+                <a href="https://www.youtube.com/@natoshi.404" target="_blank" rel="noopener noreferrer" class="link-card">
+                    <svg class="link-icon" role="img" aria-label="YouTube" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+                        <polygon points="9.75,15.02 15.5,11.75 9.75,8.48"></polygon>
+                    </svg>
+                    <span class="link-text">youtube</span>
+                </a>
+            </nav>
+
+            <div class="soundwave">
+                <svg width="100%" height="40" viewBox="0 0 200 40" fill="none">
+                    <path d="M10 20 L15 15 L20 25 L25 10 L30 30 L35 5 L40 35 L45 8 L50 32 L55 12 L60 28 L65 18 L70 22 L75 16 L80 26 L85 14 L90 24 L95 20 L100 30 L105 6 L110 34 L115 11 L120 29 L125 13 L130 27 L135 9 L140 31 L145 7 L150 33 L155 17 L160 23 L165 19 L170 21 L175 25 L180 15 L185 35 L190 3 L195 37 L200 1" stroke="currentColor" stroke-width="1" stroke-linecap="round" class="wave-path">
+                        <animate attributeName="d" dur="3s" repeatCount="indefinite" values="M10 20 L15 15 L20 25 L25 10 L30 30 L35 5 L40 35 L45 8 L50 32 L55 12 L60 28 L65 18 L70 22 L75 16 L80 26 L85 14 L90 24 L95 20 L100 30 L105 6 L110 34 L115 11 L120 29 L125 13 L130 27 L135 9 L140 31 L145 7 L150 33 L155 17 L160 23 L165 19 L170 21 L175 25 L180 15 L185 35 L190 3 L195 37 L200 1;M10 25 L15 10 L20 30 L25 5 L30 35 L35 8 L40 32 L45 12 L50 28 L55 18 L60 22 L65 16 L70 26 L75 14 L80 24 L85 20 L90 30 L95 6 L100 34 L105 11 L110 29 L115 13 L120 27 L125 9 L130 31 L135 7 L140 33 L145 17 L150 23 L155 19 L160 21 L165 25 L170 15 L175 35 L180 3 L185 37 L190 1 L195 20 L200 25;M10 20 L15 15 L20 25 L25 10 L30 30 L35 5 L40 35 L45 8 L50 32 L55 12 L60 28 L65 18 L70 22 L75 16 L80 26 L85 14 L90 24 L95 20 L100 30 L105 6 L110 34 L115 11 L120 29 L125 13 L130 27 L135 9 L140 31 L145 7 L150 33 L155 17 L160 23 L165 19 L170 21 L175 25 L180 15 L185 35 L190 3 L195 37 L200 1"></animate>
+                    </path>
+                </svg>
+            </div>
+
+            <section class="gallery">
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <div class="placeholder-image" data-src="/assets/gallery-1.jpg">
+                            <div class="placeholder-content">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                    <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                    <polyline points="21,15 16,10 5,21"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="placeholder-image" data-src="/assets/gallery-2.jpg">
+                            <div class="placeholder-content">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                    <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                    <polyline points="21,15 16,10 5,21"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="placeholder-image" data-src="/assets/gallery-3.jpg">
+                            <div class="placeholder-content">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                    <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                    <polyline points="21,15 16,10 5,21"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="copyright">© 2025 — built by natoshi</p>
+        </div>
+    </footer>
+
+    <script src="/scripts/app.js"></script>
+</body>
+</html>

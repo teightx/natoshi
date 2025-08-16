@@ -1,0 +1,14 @@
+# Gallery Image 3 Placeholder
+
+This is a placeholder for the gallery-3.jpg file.
+
+## Instructions:
+1. Replace this file with your actual photo
+2. Recommended size: 400x400 pixels (square)
+3. Format: JPG or PNG
+4. File should be named: gallery-3.jpg
+
+## Usage:
+- This image appears in the gallery section
+- Will be lazy-loaded for performance
+- Displays as a square with rounded corners
