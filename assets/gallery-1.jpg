@@ -1,14 +1,1 @@
-# Gallery Image 1 Placeholder
-
-This is a placeholder for the gallery-1.jpg file.
-
-## Instructions:
-1. Replace this file with your actual photo
-2. Recommended size: 400x400 pixels (square)
-3. Format: JPG or PNG
-4. File should be named: gallery-1.jpg
-
-## Usage:
-- This image appears in the gallery section
-- Will be lazy-loaded for performance
-- Displays as a square with rounded corners
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400"><defs><linearGradient id="photo1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#1a2332;stop-opacity:1" /><stop offset="50%" style="stop-color:#2a3441;stop-opacity:1" /><stop offset="100%" style="stop-color:#0f1419;stop-opacity:1" /></linearGradient></defs><rect width="400" height="400" fill="url(#photo1)" rx="12"/><circle cx="120" cy="120" r="40" fill="#00ffe1" opacity="0.3"/><rect x="200" y="80" width="120" height="80" fill="#ff4bd8" opacity="0.2" rx="8"/><polygon points="300,250 350,200 350,300" fill="#b4ff39" opacity="0.25"/><line x1="0" y1="133" x2="400" y2="133" stroke="#ffffff" stroke-width="1" opacity="0.1"/><line x1="0" y1="266" x2="400" y2="266" stroke="#ffffff" stroke-width="1" opacity="0.1"/><line x1="133" y1="0" x2="133" y2="400" stroke="#ffffff" stroke-width="1" opacity="0.1"/><line x1="266" y1="0" x2="266" y2="400" stroke="#ffffff" stroke-width="1" opacity="0.1"/><g transform="translate(180, 180)"><rect x="0" y="0" width="40" height="40" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.3"/><circle cx="12" cy="12" r="3" fill="#ffffff" opacity="0.5"/><polyline points="2,30 15,17 25,27 38,14" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.4"/></g></svg>
